@@ -14,7 +14,11 @@ string = text
 
 public class Act1 {
     public static void main(String[] args) {
-        // declaració de variables
+        /*
+            Declaració de Variables: Escriu un programa Java que declari una variable de cada
+            tipus primitiu i les inicialitzi amb un valor apropiat.
+         */
+
         byte b = 0x1A;
         short sh = 32767;
         char c = 's';
@@ -25,15 +29,21 @@ public class Act1 {
         boolean x = true;
         String text = "i am a text";
 
-        // conversion ahora
+        /*
+            Conversió de Tipus: Escriu un fragment de codi que mostri com
+            convertir una variable de tipus int a double i viceversa. Explica els resultats obtinguts.
+         */
+
         System.out.println("Valor 1337 (int) a double = " + returnDouble(n));
         // el valor pasa a ser sense ningun problema a double perque es un nombre enter, i de moment
         // es respecten els bits de memoria
+
         System.out.println("Valor 194.111e+24d (double) a int = " + returnInt(d));
         // al ser de doble precisio i amb mols numeros al davamt, es possible que no es trunqui correctament
         // el valor
     }
 
+    // metodes auxiliars
     static double returnDouble(int i) {
         // implicit casting
         return (double)i;
